@@ -11,23 +11,12 @@ var animals = [
 // create table and tbody
 var table = document.createElement("table");
 var tbody = document.createElement("tbody");
-var tr;
-var td;
 
 // append table to DOM
 document.querySelector('body').appendChild(table);
 table.appendChild(tbody);
 
 for (var i = 0; i < animals.length; i++) {
-  tr = document.createElement("tr");
-      td = document.createElement("td");
-      td.innerText = animals[i].name;
-      tr.appendChild(td);
-      td = document.createElement("td");
-      td.innerText = animals[i].sound;
-      tr.appendChild(td);
-
-  tbody.appendChild(tr);
 
   // 1. create tr 
   // 2. for each tr, create two tds
